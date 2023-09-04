@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerts Broker</title>
+    <style>
+        body{
+            background-color: black;
+            color:lightblue;
+            text-align: center;
+        }
+        .grid-container{
+            display: grid;
+    grid-template-columns: 2fr 2fr; 
+    gap:30px;
+        }
+        .big-block{
+            grid-column: span 2;
+        }
+        #logo{
+            height:200px;
+            background-color: black;
+        }
+        #footer{
+            background-color: rgb(2, 2, 33);
+        }
+        .block-img{
+            height:200px;
+            width:300px
+        }
+        @media (max-width: 600px) {
+            .block {
+                grid-column: span 2;
+            }
+            .block-img {
+                height:250px;
+                width:250px
+            }
+            #logo{
+                height:200px; 
+            }
+        }
+        #form {
+            color:darkred;
+        }
+    .pros.block{
+        background-color: rgb(2, 2, 33);
+    }
+    </style>
+</head>
+<body>
+    <!-- Grid Container-->
+   <div class="grid-container"> 
+
+    <!-- Block 1/LOGO-->
+    <div class="big-block block" id="logo">
+        <img src="./assets/logo.png" id="logo">
+    </div>
+
+    <!-- Block 2/H1-->
+    <div class="big-block block" id="decription">
+        <h1> Gerts Broker - new way of investment</h1>
+    </div>
+
+    <!-- Block 3/PROS-1-->
+    <div class="pros block">
+        <img src="./assets/first.jpeg" class="block-img">
+        <p>Access to money right from brokerage balance. We call it "margin withdrawals"</p>
+    </div>
+
+    <!-- Block 4/PROS-2-->
+    <div class="pros block">
+        <img src="./assets/second.png" class="block-img">
+        <p>Zero commisions. EVER</p>
+    </div>
+
+     <!-- Block 5/FORM-->
+    <div class="big-block block" id="form">
+        <form>
+            <label for="form1">Subsribe for updates:</label> </br>
+            <input type="text" name="email" id="form1">
+        </form>
+    </div>
+
+    <!-- Block 6/FOOTER-->
+    <div class="big-block block" id="footer">
+        <footer>
+            <p> Gerts Broker 2023. All rights reserved</p>
+        </footer> 
+    </div>
+
+   </div>
+</body>
+</html>
